@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animal Haven/Adopt</title>
+		<meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link href="CSS/adopt.css" rel="stylesheet">
+	  <link href="CSS/navbar.css" rel="stylesheet">
+	</head>
+
+<body>
+	<div class="header">
+		<a href="#default" class="logo">Animal Haven</a>
+		<a><img src="Images/logo.png" width="50"></a>
+		<div class="header-right">
+		  <a href="about&contact.html">Home</a>
+		  <a class="active" href="adopt.html">Adopt</a>
+		  <a href="#volunteer">Volunteer</a>
+		  <a href="#Rescue">Rescue</a>
+		  <a href="#donation">Donation</a>
+		</div>
+	  </div>
+  <center>
+    <div class="adopt">
+      <h1>ADOPT</h1>
+      <p>There are millions of dogs abandoned on the streets around the world, and combating this alarming number seems like an almighty task. Especially because of the easy reproduction of dogs and the irresponsibility of many people.</p>
+    </div>
+  </center>
+    <div class="whyadopt">
+      <h2 align="center">Why Adopt?</h2>
+      <div class="marquee">
+		  <Marquee behavior="scroll" scrollamount="20">
+			  <img src="Images/logo.png" width="10%">
+			  <img src="Images/vector person.jpg" width="10%">
+			  <img src="Images/logo.png" width="10%">
+			  <img src="Images/vector person.jpg" width="10%">
+			  <img src="Images/logo.png" width="10%">
+		  </Marquee>
+	  </div>
+      <p><h4>1. You learn responsibility</h4>
+      Rescuing a stray dog ​​or adopting from a shelter is a decision that should not be taken lightly, and that compromises you for the rest of the animal's life.<br>
+      <h4>2. You save lives</h4>
+      Adopting a street dog will save their life, giving them a second chance to have a home and live a dignified and happy life.<br>
+      <h4>3. Fights against the buying and selling of living beings</h4>
+      When buying a dog in a pet store or from a breeder, you contribute to the breeding, legal or not, of animals, and in most cases this is done in poor conditions for poor dogs and do not support the abuse.<br>
+      <h4>4. You earn a friend for life</h4>
+      If you have ever felt isolated, after you have adopted a dog you will never feel alone again.<br>
+      <h4>5. You will always be protected</h4>
+      Upon being chosen as part of a family, the dog will become unconditional protector of their relatives.</p>
+    </div>
+    <!--Step 1 : Adding HTML-->
+  <center>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>
+  </center>
+
+	<div id="id01" class="modal">
+
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+				<img src="Images\vector person.jpg" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+				<label><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+
+				<label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<button type="submit">Login</button>
+				<input type="checkbox" checked="checked"> Remember me
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		</form>
+	</div>
+
+	<script>
+		var modal = document.getElementById('id01');
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
