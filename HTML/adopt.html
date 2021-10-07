@@ -7,14 +7,15 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link href="CSS/adopt.css" rel="stylesheet">
 	  <link href="CSS/navbar.css" rel="stylesheet">
+	  <link href="CSS/signup.css" rel="stylesheet">
 	</head>
 
 <body>
 	<div class="header">
-		<a href="#default" class="logo">Animal Haven</a>
-		<a><img src="Images/logo.png" width="50"></a>
+		<a><img src="Images/animalhaven logo1.png" width="75"></a>
+      <a href="#default" class="logo">Animal Haven</a>
 		<div class="header-right">
-		  <a href="about&contact.html">Home</a>
+		  <a href="home.html">Home</a>
 		  <a class="active" href="adopt.html">Adopt</a>
 		  <a href="#volunteer">Volunteer</a>
 		  <a href="#Rescue">Rescue</a>
@@ -29,14 +30,8 @@
   </center>
     <div class="whyadopt">
       <h2 align="center">Why Adopt?</h2>
-      <div class="marquee">
-		  <Marquee behavior="scroll" scrollamount="20">
-			  <img src="Images/logo.png" width="10%">
-			  <img src="Images/vector person.jpg" width="10%">
-			  <img src="Images/logo.png" width="10%">
-			  <img src="Images/vector person.jpg" width="10%">
-			  <img src="Images/logo.png" width="10%">
-		  </Marquee>
+      <div class="images">
+		  <img src="Images/group.jpg" width="1300">
 	  </div>
       <p><h4>1. You learn responsibility</h4>
       Rescuing a stray dog ​​or adopting from a shelter is a decision that should not be taken lightly, and that compromises you for the rest of the animal's life.<br>
@@ -52,6 +47,7 @@
     <!--Step 1 : Adding HTML-->
   <center>
     <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>
+	<button onclick="document.getElementById('id02').style.display='block'">Signup</button>
   </center>
 
 	<div id="id01" class="modal">
@@ -80,15 +76,66 @@
 		</form>
 	</div>
 
-	<script>
-		var modal = document.getElementById('id01');
+	<!-- Button to open the modal signup form -->
+	<center></center>
+
+
+	<!-- The Modal -->
+	<div id="id02" class="modals">
+	  <span onclick="document.getElementById('id02').style.display='none'"
+	class="close" title="Close Modal">&times;</span>
+	
+	  <!-- Modal Content -->
+	  <form class="modal-content animate" action="/action_page.php">
+		
+		<div class="containers">
+		<center><img src="Images/animalhaven logo1.png" alt="logo" class="avatar"><br></center>
+
+		  <label for="uname"><b>Email Id</b></label>
+		  <input type="text" placeholder="Enter Email Id" name="email" required><br>
+	
+		  <label for="uname"><b>Username</b></label>
+		  <input type="text" placeholder="Enter Username" name="uname" required><br>
+	
+		  <label for="psw"><b>Password</b></label>
+		  <input type="password" placeholder="Enter Password" name="psws" required><br>
+	
+		  <label for="psw"><b>Repeat Password</b></label>
+		  <input type="password" placeholder="Enter Password again" name="pswagn" required><br>
+	
+		  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+		  <button type="submit" class="signup">Sign Up</button>
+		  <label>
+			<input type="checkbox" checked="checked" name="remember"> Remember me
+		  </label>
+		</div>
+	
+		<div class="containers" style="background: color #f2f2f2;">
+		  <span class="psws"><a href="adopt.html">Forgot password?</a></span>
+		</div>
+	  </form>
+	</div>
+	
+<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
 		window.onclick = function(event) {
 			if (event.target == modal) {
 				modal.style.display = "none";
 			}
 		}
+
+	var modals = document.getElementById('id02');
+	
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modals) {
+			modals.style.display = "none";
+		}
+	}
 	</script>
 
 </body>
 
 </html>
+
