@@ -12,12 +12,11 @@
 
 <body>
 	<div class="header">
-		<a><img src="Images/animalhaven logo1.png" width="75"></a>
-      <a href="#default" class="logo">Animal Haven</a>
+		<a  href="home.html"><img src="Images/Dog Haven.png" width="200"></a>
 		<div class="header-right">
 		  <a href="home.html">Home</a>
 		  <a class="active" href="adopt.html">Adopt</a>
-		  <a href="#volunteer">Volunteer</a>
+		  <a href="volunteer.html">Volunteer</a>
 		  <a href="#Rescue">Rescue</a>
 		  <a href="#donation">Donation</a>
 		</div>
@@ -30,6 +29,7 @@
   </center>
     <div class="whyadopt">
       <h2 align="center">Why Adopt?</h2>
+	  <p>By taking a dog home by adopting from a rescue or a shelter, you are making room in the rescue so they can save another pet from a shelter, or making room at the shelter itself.</p>
       <div class="images">
 		  <img src="Images/group.jpg" width="1300">
 	  </div>
@@ -44,98 +44,10 @@
       <h4>5. You will always be protected</h4>
       Upon being chosen as part of a family, the dog will become unconditional protector of their relatives.</p>
     </div>
-    <!--Step 1 : Adding HTML-->
-  <center>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>
-	<button onclick="document.getElementById('id02').style.display='block'">Signup</button>
-  </center>
-
-	<div id="id01" class="modal">
-
-		<form class="modal-content animate" action="/action_page.php">
-			<div class="imgcontainer">
-				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-				<img src="Images\vector person.jpg" alt="Avatar" class="avatar">
-			</div>
-
-			<div class="container">
-				<label><b>Username</b></label>
-				<input type="text" placeholder="Enter Username" name="uname" required>
-
-				<label><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
-
-				<button type="submit">Login</button>
-				<input type="checkbox" checked="checked"> Remember me
-			</div>
-
-			<div class="container" style="background-color:#f1f1f1">
-				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-				<span class="psw">Forgot <a href="#">password?</a></span>
-			</div>
-		</form>
+	<div>
+		<center><p><b>Want to Adopt?<a href="adoptrules.html">Click here</a></b></p></center>
 	</div>
-
-	<!-- Button to open the modal signup form -->
-	<center></center>
-
-
-	<!-- The Modal -->
-	<div id="id02" class="modals">
-	  <span onclick="document.getElementById('id02').style.display='none'"
-	class="close" title="Close Modal">&times;</span>
-	
-	  <!-- Modal Content -->
-	  <form class="modal-content animate" action="/action_page.php">
-		
-		<div class="containers">
-		<center><img src="Images/animalhaven logo1.png" alt="logo" class="avatar"><br></center>
-
-		  <label for="uname"><b>Email Id</b></label>
-		  <input type="text" placeholder="Enter Email Id" name="email" required><br>
-	
-		  <label for="uname"><b>Username</b></label>
-		  <input type="text" placeholder="Enter Username" name="uname" required><br>
-	
-		  <label for="psw"><b>Password</b></label>
-		  <input type="password" placeholder="Enter Password" name="psws" required><br>
-	
-		  <label for="psw"><b>Repeat Password</b></label>
-		  <input type="password" placeholder="Enter Password again" name="pswagn" required><br>
-	
-		  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-		  <button type="submit" class="signup">Sign Up</button>
-		  <label>
-			<input type="checkbox" checked="checked" name="remember"> Remember me
-		  </label>
-		</div>
-	
-		<div class="containers" style="background: color #f2f2f2;">
-		  <span class="psws"><a href="adopt.html">Forgot password?</a></span>
-		</div>
-	  </form>
-	</div>
-	
-<script>
-	// Get the modal
-	var modal = document.getElementById('id01');
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
-
-	var modals = document.getElementById('id02');
-	
-	// When the user clicks anywhere outside of the modal, close it
-	window.onclick = function(event) {
-		if (event.target == modals) {
-			modals.style.display = "none";
-		}
-	}
-	</script>
-
+  
 </body>
 
 </html>
-
