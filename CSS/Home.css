@@ -2,7 +2,6 @@ body {
   background: #f2f2f2;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
- 
 }
 
 .left-col .subhead {
@@ -10,7 +9,8 @@ body {
   font-weight: bold;
   color: #474e5d;
   letter-spacing: .2em;
-  padding-left: 12%;
+  padding-left: 2%;
+  text-align: center;
 }
 
 .left-col h1 {
@@ -18,6 +18,7 @@ body {
   line-height: 1.3em;
   margin-top: .2em;
   padding-left: 2%;
+  text-align: center;
 }
 
 .hero-image {
@@ -40,7 +41,6 @@ ul.reasons-list {
 
 ul.reasons-list li {
   font-size: 1.1em;
-  margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
 }
@@ -64,4 +64,17 @@ li {
   margin-top: 0;
   padding: .8em;
 }
+
+.our-mission {
+  background-color: #f2f2f2;
+  box-shadow: 4px 4px 8px 4px rgba(0.2, 0.2, 0.2, 0.2);
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
