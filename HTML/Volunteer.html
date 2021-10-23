@@ -4,70 +4,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Haven</title>
-    <link rel="stylesheet" href="CSS/Volunteer.css">
+    <title>Animal Haven-Volunteer</title>
+    <link href="CSS/volunteer.css" rel="stylesheet">
+    <link href="CSS/slideshow.css" rel="stylesheet">
 </head>
 <body>
-  <div class="card">
-    <h1>Volunteer</h1>
+    <div class="header">
+      <a  href="home.html"><img src="Images/Dog Haven.png" width="200"></a>
+          <div class="header-right">
+            <a href="home.html">Home</a>
+            <a href="adopt.html">Adopt</a>
+            <a class="active" href="volunteer.html">Food Drives</a>
+            <a href="rescue.html">Rescue</a>
+            <a href="whydonate.html">Donation</a>
+          </div>
+        </div>
+
+        <div class="card">
+            <h1>Food Drives</h1>
+            <p>When the coronavirus pandemic forced everything to close down and everyone to stay at home our 
+              little stray friends remained suffered hunger. Many animals died due to hunger as there was no 
+              food for them. That's when we got the idea for Food drives across the city so that none of our 
+              strays have to stay hungry. It is our mission to save these little animals from malnutrion 
+              and provide all of them with food.
+            </p>
+            <p><b>*Timings for the food drive : 9:00 pm - 11:00 pm</b></p>
+          </div>
+          <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="Images/food drive1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="Images/food drive2.jfif" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="Images/food drive3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="Images/fooddrive.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="Images/food drive4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/fooddrive3.jpg" style="width:100%">
+      </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  <p>Timings for the food drive : 9:00 pm - 11:00 pm</p>
-   <table>
-        <tr>
-          <th>Day</th>
-          <th>Area</th>
-          <th>Route</th>
-        </tr>
-        <tr>
-          <td>Monday</td>
-          <td>Manjalpur-Makarpura</td>
-          <td>
-            Starting point: Darbar Chowkdi <br>
-            Ending point: Susen Circle
-          </td>
-        </tr>
-        <tr>
-          <td>Tuesday</td>
-          <td>Gotri-Gorwa</td>
-          <td>
-            Starting point: Collabera <br>
-            Ending point: Natubhai Circle
-          </td>
-        </tr>
-        <tr>
-          <td>Wednesday</td>
-          <td>Karelibaug</td>
-          <td>
-            Starting point: Ratri bazar
-            Ending point: Airport Circle
-          </td>
-        </tr>
-        <tr>
-          <td>Thursday</td>
-          <td>O.P Road-Akota</td>
-          <td>
-            Starting point: Akshar Chowk <br>
-            Ending point: Chakli Circle
-          </td>
-        </tr>
-        <tr>
-          <td>Friday</td>
-          <td>Alkapuri</td>
-          <td>
-            Starting point: Racecourse circle <br>
-            Ending point: Central Railway Station
-          </td>
-        </tr>
-        <tr>
-          <td>Saturday</td>
-          <td>Fatehgunj</td>
-          <td>
-            Starting point: Kala Ghoda Circle
-            Ending point: Seven Seas Mall
-          </td>
-        </tr>
-        
-   </table>
-      
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <script>
+      var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+
+  
+
+          <table>
+                <tr>
+                  <th>Day</th>
+                  <th>Area</th>
+                  <th>Route</th>
+                </tr>
+                <tr>
+                  <td>Monday</td>
+                  <td>Manjalpur-Makarpura</td>
+                  <td>
+                    Starting point: Darbar Chowkdi <br>
+                    Ending point: Susen Circle
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>Gotri-Gorwa</td>
+                  <td>
+                    Starting point: Collabera <br>
+                    Ending point: Natubhai Circle
+                  </td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>Karelibaug</td>
+                  <td>
+                    Starting point: Ratri bazar<br>
+                    Ending point: Airport Circle
+                  </td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>O.P Road-Akota</td>
+                  <td>
+                    Starting point: Akshar Chowk <br>
+                    Ending point: Chakli Circle
+                  </td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>Alkapuri</td>
+                  <td>
+                    Starting point: Racecourse circle <br>
+                    Ending point: Central Railway Station
+                  </td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>Fatehgunj</td>
+                  <td>
+                    Starting point: Kala Ghoda Circle<br>
+                    Ending point: Seven Seas Mall
+                  </td>
+                </tr>
+               
+           </table>
+           <div class="donate">
+             <p>Want to help us by donating food and helping us achieve our goals?<br>
+              <a href="donateform.html">Donate Here</a></p>
+           </div>
+
 </body>
 </html>
