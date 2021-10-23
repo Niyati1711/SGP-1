@@ -13,6 +13,23 @@ body {
     min-width: 300px;
   }
   
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    }
+    
+    /* Close button on hover */
+    .close:hover,
+    .close:focus {
+    color: white;
+    cursor: pointer;
+    }
+  
   /* Style the input fields */
   input {
     padding: 10px;
@@ -24,7 +41,7 @@ body {
   
   /* Mark input boxes that gets an error on validation: */
   input.invalid {
-    background-color: ##474e5d;
+    background-color: #474e5d;
   }
   
   /* Hide all steps by default: */
